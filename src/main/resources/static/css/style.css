@@ -1,0 +1,145 @@
+.header{
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0px 6px 20px 0px #271b1b;
+	background-color: #FFFFFF;
+}
+.header .left{
+	width: 40%;
+	height: 50px;
+	float: left;
+}
+.logo{
+	width: 108px;
+	height: 50px;
+	margin-left: 100px;
+	background-image: url("../img/siren-white.png");
+	background-size: 108px 50px;
+}
+.logo:hover{
+	background-image: url("../img/siren-shadow.png");
+}
+.header .right{
+	width: 60%;
+	height: 50px;
+	float: right;
+}
+.header .right ul{
+	height: 50px;
+	width: 100%;
+	margin-top: 0;
+}
+.div1{
+	float: left;
+}
+.div2{
+	float:right;
+}
+.header .right .div2{
+	margin-top: 10px;
+}
+.header .right li{
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	height: 50px;
+	width: 100px;
+	list-style: none;
+	cursor: pointer;
+	transition: width 1s, height 1s, transform 1s;
+}
+.header .right li:hover{
+	background-color: rgba(255,255,255,0.40);
+	box-shadow: 0 0 5px #000;
+	border-radius: 1px;
+	width: 120px;
+}
+.content{
+	width: 100%;
+	height: 800px;
+	/*filter: blur(1px);*/
+/*	background-color: rgba(255,255,255,0.50);*/
+/*	background-color: #FFFFFF;*/
+}
+.footer{
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	box-shadow: 0px -5px 20px 0px #271b1b;
+	background-color:#FFFFFF;
+	line-height: 50px;
+	text-align: center;
+/*    text-shadow: 2px 1px 1px #000000;*/
+    color: #CCCCCC;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	top: 0;
+	left: 0;
+	background-image: url("../img/seasidequarry.jpg");
+	background-size:100%;
+	filter: blur(10px);
+}
+.login{
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -150px;
+	box-shadow: 0px 0px 20px 0px #000000;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: center;
+	color: #000000;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	transition: width 1s, height 1s, transform 1s;
+}
+.login input{
+	background: none;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+}
+.login img{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.login label{
+	display: inline-block;
+	width: 50px;
+}
+.login table{
+	margin: 50px auto;
+}
+.btn{
+	background: none;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+}
+.btn:hover{
+	background-color: #CCCCCC;
+}
+.bottom{
+
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	font-family: "等线";
+}

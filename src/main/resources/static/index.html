@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SIREN</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="app">
+	<div class="bg"></div>
+	<div class="header">
+		<div class="left">
+			<div class="logo">
+
+			</div>
+		</div>
+		<div class="right">
+			<div class="div1">
+				<ul>
+					<li>首页</li>
+					<li>类别</li>
+					<li>支持</li>
+					<li>关于</li>
+				</ul>
+			</div>
+			<div class="div2">
+				<button class="btn" @click="isShow = true">登录</button>
+				<button class="btn">注册</button>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="login" v-show="isShow">
+			<img @click="isShow = false" src="img/close.png">
+			<form action="/api/user/login" method="post">
+				<table>
+					<tr>
+						<th><label>账号：</label></th>
+						<th><input type="text" name="username" v-model="username" placeholder="用户名"/></th>
+					</tr>
+					<tr>
+						<th><label>密码：</label></th>
+						<th><input type="password" name="password" v-model="password" placeholder="密码"/></th>
+					</tr>
+					<tr style="height: 100px;">
+						<th colspan="2">
+							<button class="btn" type="submit" >登录</button>
+							<button class="btn" >注册</button>
+						</th>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="bottom">
+
+		</div>
+	</div>
+	<div class="footer">
+		There is an animal in the world that has four legs in the morning, two legs at noon and three legs at night, and the weakest at night.
+	</div>
+</div>
+</body>
+</html>
+<script src='https://unpkg.com/vue@2.0.5/dist/vue.js'></script>
+<script src="js/index.js"></script>
